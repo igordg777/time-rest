@@ -16,7 +16,7 @@ For using you need require test-rest such as:
 Вызов новостей осуществляется путем ввода команды:\
 Main commands:
 
-###`node + 'название файла (без расширения)' + 'команда'`
+`node + 'название файла (без расширения)' + 'команда'`
 #### `node + 'name your file' + 'command'`
 
 
