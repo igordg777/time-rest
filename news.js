@@ -17,15 +17,14 @@ async function news(req) {
 }
 
 function help() {
-    console.log("Команда 'гид' (или команда 'help') - команды вызова контента" + '\n'+
-        + "Команда 'новости' (или команда 'news') - основные новости" + '\n'
-        + "Команда 'бизнес' (или команда 'business news') - новости бизнесса" + '\n'
+    console.log("Команда 'новости' (или команда 'news') - основные новости" + '\n'
+        + "Команда бизнесс (или команда 'business news') - новости бизнесса" + '\n'
         + "Команда 'всякое' (или команда 'rest news') - желтая пресса" + '\n'
         + "Команда 'медицина' (или команда 'health news') - новости медицины" + '\n'
         + "Команда 'наука' (или команда 'science news') - новости науки" + '\n'
         + "Команда 'спорт' (или команда 'sports news') - новости медицины" + '\n'
         + "Команда 'техно' (или команда 'technology news') - новости медицины" + '\n'
-        + 'Команда smil e - smile :)');
+        + 'Команда smile - smile :)');
 }
 
 if (process.argv[2] === 'news' || process.argv[2] === 'новости') {
@@ -36,7 +35,7 @@ if (process.argv[2] === 'news' || process.argv[2] === 'новости') {
     help()
 } else if ((process.argv[2] === 'business' && process.argv[3] === 'news') || process.argv[2] === 'бизнес') {
     news('https://newsapi.org/v2/top-headlines?country=ru&category=business&apiKey=e8d9ae5fb014438d9297a26d3477523b')
-} else if ((process.argv[2] === 'rest' && process.argv[3] === 'news') || process.argv[2] === 'всякое') {
+} else if ((process.argv[2] === 'rest' && process.argv[3] === 'news') || process.argv[2] === 'желтая пресса') {
     news('https://newsapi.org/v2/top-headlines?country=ru&category=entertainment&apiKey=e8d9ae5fb014438d9297a26d3477523b')
 } else if ((process.argv[2] === 'health' && process.argv[3] === 'news') || process.argv[2] === 'медицина') {
     news('https://newsapi.org/v2/top-headlines?country=ru&category=health&apiKey=e8d9ae5fb014438d9297a26d3477523b')
