@@ -24,7 +24,7 @@
   "_where": "/home/igor/Рабочий стол/фаза 3/Доклад npm/пробуем время отдыха",
   "author": "iGorG",
   "dependencies": {
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.1"
   },
   "deprecated": false,
   "keywords": [
